@@ -83,9 +83,10 @@ footer{
 
 .container{
   display: grid;
+  grid-row-gap: 15px;
   grid-template-columns: 1fr 5f 1fr;
   grid-template-rows: auto auto auto auto auto;
-  grid-row-gap: 15px
+  
 }
 
 header{
@@ -131,26 +132,26 @@ header p{
 }
 
 .about, .about-image{
-   grid-row: 2 / span 1;
+   grid-row: 2 / auto;
 
 }
 
 .method, .method-image{
    /*Your Code Here*/
-   grid-row: 3 / span 1
+   grid-row: 3 / auto;
 
 }
 
 
 .clients, .clients-image{
     /*Your Code Here*/
-  grid-row: 4 / span 1
+  grid-row: 4 / auto;
 }
 
 
 .contact, .contact-image{
     /*Your Code Here*/
-    grid-row: 5 / span 1
+    grid-row: 5 / span 1;
 
 }
 
@@ -174,21 +175,20 @@ background-color: rgba(255, 255, 255, .8);
 
   .container{
     /*Your code here:*/
-    display: grid;
+    
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
-    grid-column: 2 span 2;;
+    grid-column: 3 span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
-    grid-column: 1/ -1;
-    max-height: 700px;
-    overflow: hidden;
+    grid-column: 2/ span 2;
+ 
   }
 }
 
