@@ -115,7 +115,7 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  grid-column: 2 /span 1;
+  grid-column: 2 /auto;
   
   
 
@@ -151,7 +151,7 @@ header p{
 
 .contact, .contact-image{
     /*Your Code Here*/
-    grid-row: 5 / span 1;
+    grid-row: 5 / auto;
 
 }
 
